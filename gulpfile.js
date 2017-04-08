@@ -6,71 +6,52 @@ var gulp = require('gulp')
 ,   annotate = require('gulp-ng-annotate')
 ,   sourcemaps = require('gulp-sourcemaps')
 ,   CacheBuster = require('gulp-cachebust')
-,   uglify = require('gulp-uglify')
-,   rename = require('gulp-rename')
-,   cssmin = require('gulp-cssmin')
-,   htmlmin = require('gulp-htmlmin')
 ,   print = require('gulp-print')
 ,   babel = require('gulp-babel');
 
 var cachebust = new CacheBuster();
 
-//this is an object that keeps track of all the file and folder locations
-//if you move any file structures around update this section
-var paths = {
-    jsSource: ['./public/js/**/*.js'],
-    sassSource: ['./public/styles/**/*.scss'],
-    indexSource: ['./public/index.html'],
-    viewsSource: ['./public/views/**/*.html'],
-    picturesSource: ['./public/pictures/**/*']
-};
 
 //SASS task, this compiles and compresses from SCSS fiels to a css file
 gulp.task('sass', function() {
-    return gulp.src(paths.sassSource)
+    return gulp.src('./development/styles/**/*.scss')
     .pipe(sourcemaps.init())
     .pipe(sass())
     .pipe(cachebust.resources())
     .pipe(concat('bundle.css'))
     .pipe(sourcemaps.write('./maps'))
-    .pipe(rename({extname: ".min.css"}))
-    .pipe(cssmin())
     .pipe(gulp.dest('./dist'));
 });
 
 //JS task This will convert all ES6 to ES5
 //This compile and compress all js files in to one
 gulp.task('js', function() {
-    return gulp.src(paths.jsSource)
+    return gulp.src('./development/js/**/*.js')
         .pipe(sourcemaps.init())
         .pipe(print())
         .pipe(babel({presets: ['es2015'] }))
         .pipe(concat('bundle.js'))
         .pipe(annotate())
-        .pipe(uglify())
         .pipe(sourcemaps.write('./'))
-        .pipe(rename({extname: ".min.js"}))
         .pipe(gulp.dest('./dist'));
 });
 
 //this task will compress all of your views but will not compile them into one.
 //the views need to be seperate files for ui-router to work.
 gulp.task('views', function() {
-    gulp.src(paths.viewsSource)
-      .pipe(htmlmin({collapseWhitespace: true}))
+    gulp.src('./development/views/**/*.html')
       .pipe(gulp.dest("./dist/views"));
 });
 
 //This task makes a copy of your index.html and compresses it and moves it to the dist folder
 gulp.task('index', function() {
-    gulp.src(paths.indexSource)
-      .pipe(htmlmin({collapseWhitespace: true}))
+    gulp.src('./development/index.html')
       .pipe(gulp.dest("./dist"));
 });
 
 //this task copies all your pictures over to the dist folder.
 gulp.task('pictures', function() {
-    gulp.src(paths.picturesSource)
+    gulp.src('./development/pictures/**/*')
       .pipe(gulp.dest("./dist/pictures"));
 });
 
