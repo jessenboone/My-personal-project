@@ -14,7 +14,7 @@ Chances are you don't want your project to be called Angular-boilerplate and you
 
 Easy way is to create a new repo on your github. Then on the command line while inside of your respository run the following command git:
 
-`remote remove origin`
+`git remote remove origin`
 
  This will remove your connection to the forked repo without deleting your code or the repo. Now you can push it to a new repo with an appropriate name, run the commands under 'push an existing repository from the command line' when making a new repository. The commands are:
 
