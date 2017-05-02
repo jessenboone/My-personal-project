@@ -6,17 +6,27 @@ const express = require('express'),
       config = require('./config.js'),
       session = require('express-session'),
       app = module.exports = express(),
-      port = 80;
+      port = 8000;
 
 const mainCtrl = require('./controllers/mainCtrl');
 
 //creating setup for connection to a database
-const connectionStrings = config.MASSIVE_URI;
-var db = massive.connectSync({
-    connectionString: connectionStrings
+const conn = massive.connectSync({
+  connectionString: config.connectionString
 });
+
 app.set('db', db);
 var db = app.get('db');
+db.cars(function(err, response) {
+  if (response) {
+    // db.images(function(err, response) {
+    //   if(err) {
+    //     console.log(err)
+    //   }
+    // })
+  }
+})
+
 
 //functions that run when handeling requets
 app.use(bodyParser.json());

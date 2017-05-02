@@ -2,12 +2,111 @@
 <html ng-app="App">
    <head>
       <meta charset="utf-8">
-      <title>CSS Animation</title>
+      <title>Chrysler Official Site</title>
       <link rel="stylesheet" href="./bundle.css" media="screen" title="no title">
+      <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet">
    </head>
    <body>
+    <nav class="navbar">
+      <div class="left">
+        <ul class="text">
+          <li>
+            <div class="logo">
+              <img src="./images/chrysler-logo.png" alt="some_text">
+            </div>
+          </li>
+          <li>VEHICLES</li>
+          <li>SHOPPING TOOLS</li>
+          <li>THIS IS CHRYSLER</li>
+          <li>OWNERS</li>
+        </ul>
+      </div>
+      <div class="right">
+        <ul class="text">
+          <li><i class="material-icons icons-style">location_on</i>DEALERS & VEHICLES</li>
+          <li><i class="material-icons icons-style wrench">build</i>BUILD & PRICE</li>
+        </ul>
+      </div>
+    </nav>
+    <div class="carousel">
+      <img class="main-picture" src="http://www.chrysler.com/content/dam/fca-brands/na/chrysler/en_us/bhp/hero/desktop/2017-chrysler-300-hero3-1.jpg.image.3840.jpg">
 
-      <ui-view></ui-view>
+    </div>
+    <div class="car-container">
+      <div class="cars">
+        <div class="car">
+          <img src="./images/home-page/images/2017-chrysler-200-lineup.jpg.image.500.jpg" alt="200" >
+          <h2>Chrysler 200</h2>
+        </div>
+        <div class="car">
+          <img src="./images/home-page/images/2017-chrysler-300-lineup.jpg.image.500.jpg" alt="300" >
+          <h2>Chrysler 300</h2>
+        </div>
+        <div class="car">
+          <img src="./images/home-page/images/2017-chrysler-pacifica-lineup.jpg.image.500.jpg" alt="pacifica" >
+          <h2>Chrysler Pacifica</h2>
+        </div>
+        <div class="car">
+          <img src="./images/home-page/images/2017-pacifica-hybrid-bhp-lineup-tile.jpg.image.500.jpg" alt="pacifica-hybrid" >
+          <h2>Chrysler Pacifica Hybrid</h2>
+        </div>
+      </div>
+      <div class="lower-container">
+        <div class="lower-top">
+          <div class="dog-window">
+            <div class="dog-top">
+              <img src="http://www.chrysler.com//content/dam/fca-brands/na/chrysler/en_us/bhp/promo/desktop/Canine-Companions-BHP-Slice.jpg.image.2000.jpg" alt="dog">
+            </div>
+            <div class="dog-bottom">
+
+            </div>
+          </div>
+          <div class="kbb">
+            <div class="kbb-logo">
+
+            </div>
+            <div class="kbb-banner">
+
+            </div>
+            <div class="kbb-text">
+
+            </div>
+          </div>
+        </div>
+        <div class="lower-bottom">
+          <div class="incentives">
+            <div class="incentives-top">
+
+            </div>
+            <div class="incentives-bottom">
+
+            </div>
+          </div>
+          <div class="social">
+            <div class="social-top">
+
+            </div>
+            <div class="social-bottom">
+
+            </div>
+          </div>
+          <div class="Find-dealer">
+            <div class="find-top">
+
+            </div>
+            <div class="find-bottom">
+
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+
+
+      <!-- <ui-view></ui-view> -->
 
       <script
        src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.6/angular.js"></script>

@@ -1,4 +1,3 @@
 module.exports = {
-  MASSIVE_URI: '';
-  SESSION_SECRET: '';
+  connectionString:"postgres://postgres:Football@88@localhost/personal_project"
 }

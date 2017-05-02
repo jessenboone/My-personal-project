@@ -11,6 +11,14 @@ var gulp = require('gulp')
 
 var cachebust = new CacheBuster();
 
+var paths = {
+   jsSource: ['./development/js/**/*.js'],
+   sassSource: ['./development/styles/**/*.scss'],
+   indexSource: ['./development/index.html'],
+   viewsSource: ['./development/views/**/*.html'],
+   picturesSource: ['./development/pictures/**/*']
+};
+
 
 //SASS task, this compiles and compresses from SCSS fiels to a css file
 gulp.task('sass', function() {
