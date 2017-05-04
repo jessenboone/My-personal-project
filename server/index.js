@@ -36,6 +36,7 @@ app.get('/api/test', function(req, res) {
 })
 app.get('/api/cars/:model', carCtrl.getCars)
 
+app.get('/api/images/:model', carCtrl.getImages)
 
 
 //start the server listening on port

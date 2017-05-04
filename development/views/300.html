@@ -35,36 +35,97 @@
   <video loop class="main-video-300" src="http://www.chrysler.com/content/dam/fca-brands/na/chrysler/en_us/2017/300/vlp/desktop/2017-chrysler-300-hero.mp4" autoplay>
   </video>
 </div>
+
+
+
+
 <div class="car-container-300">
-  <div class="car-financing">
-    <div class="">
+  <div class="car-financing-info-300">
 
+    <div class="msrp-300">
+      <div class="msrp-head-300">
+        <h1>MSRP STARTING AT</h1>
+      </div>
+      <div class="msrp-data-300">
+        <h1>${{cars[0].msrp}}</h1>
+      </div>
+      <div class="msrp-foot-300">
+        <h1>2017 Chrysler 300 as shown. Price starting at<br> MSRP ${{cars[0].msrp}}</h1>
+      </div>
     </div>
-    <div class="msrp">
-      {{cars[0].msrp}}
-    </div>
-    <div class="">
 
-    </div>
-    <div class="">
+    
 
+    <div class="lease-300">
+      <div class="lease-head-300">
+        <h1>Lease for</h1>
+      </div>
+      <div class="lease-info-300">
+        <h1>$260</h1>
+        <h2>months for<br>36 months</h2>
+      </div>
+      <div class="lease-foot-300">
+        <h2>$2,999 total due at lease signing. No security<br> deposit required. Tax, title and license extra.<br> Lease example for 2017 300 LIMITED.</h2>
+      </div>
     </div>
-    <div class="">
 
+
+    <div class="finance-300">
+      <div class="finance-head-300">
+        <h1>Finance for</h1>
+      </div>
+      <div class="finance-info-300">
+        <h1>0% APR</h1>
+      </div>
+      <div class="finance-foot-300">
+        <h2>For 60 months</h2>
+        <h2>Plus up to $3,500</h2>
+      </div>
+      <div class="finance-link-300">
+        <h2>Cash Allowance<i class="material-icons side-arrow">keyboard_arrow_right</i></h2>
+      </div>
+    </div>
+
+
+    <div class="get-up-to-300">
+      <div class="get-up-to-head-300">
+        <h2>Get up to</h2>
+      </div>
+      <div class="get-up-to-info-300">
+        <h1>$5,250</h1>
+      </div>
+      <div class="get-up-to-link-300">
+        <h2>Total Value<i class="material-icons side-arrow">keyboard_arrow_right</i></h2>
+      </div>
+    </div>
+
+
+    <div class="finance-buttons-container-300">
+      <div class="finance-build-button-300">
+        <button type="button">BUILD & PRICE</button>
+        <i class="material-icons build-side-arrow">keyboard_arrow_right</i>
+      </div>
+      <div class="finance-search-button-300">
+        <button type="button">SEARCH NEW INVENTORY</button>
+        <i class="material-icons search-side-arrow">keyboard_arrow_right</i>
+      </div>
     </div>
   </div>
+
+
+
   <div class="car-packages">
     <div class="car-300">
-      placeholder
+    <img ng-src="{{images[0].image_url}}" alt="">
     </div>
     <div class="car-300">
-      placeholder
+      <img ng-src="{{images[7].image_url}}" alt="">
     </div>
     <div class="car-300">
-      placeholder
+      <img ng-src="{{images[15].image_url}}" alt="">
     </div>
     <div class="car-300">
-      placeholder
+      <img ng-src="{{images[22].image_url}}" alt="">
     </div>
   </div>
   <!-- <div class="custom-300">

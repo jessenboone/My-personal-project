@@ -6,6 +6,19 @@ angular.module("App").service('service300', function($http) {
       url: '/api/cars/' + model
     }).then(function(response){
       return response.data
+      console.log(response.data)
+    })
+
+  }
+
+
+  this.getImages = function(model) {
+    return $http({
+      method: 'GET',
+      url: '/api/images/' + model
+    }).then(function(response) {
+      return response.data
+      console.log(response.data)
     })
 
   }

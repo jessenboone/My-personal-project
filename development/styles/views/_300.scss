@@ -1,7 +1,7 @@
 
 @font-face {
     font-family: roboto;
-    style: regular;
+    style: medium 500;
     src: url('https://fonts.googleapis.com/css?family=Roboto');
 
 }
@@ -51,7 +51,7 @@
     font-weight: bold;
     list-style-type: none;
     color: white;
-    font-size: 16px;
+    font-size: 14px;
 
 
   }
@@ -73,9 +73,9 @@
     padding-right: 20px;
   }
 
-  .icons-style {
+  .icons-style-mini {
     color: #7e7e7e;
-    font-size: 16px;
+    font-size: 14px;
     margin-left: 30px;
     margin-right: 8px;
 
@@ -114,7 +114,7 @@
      }
 
      icons-style-mini {
-        text: 10px;
+        text: 8px;
         padding-top: 10px;
 
      }
@@ -174,15 +174,136 @@
     background-color: black;
     margin-top: -5px;
 
-  .car-financing {
-    height: 119.39px;
+  .car-financing-info-300 {
+    height: 211.58px;
     background: white;
     width: 95%;
     margin:auto;
     display: flex;
     flex-direction: row;
-    justify-content: center;
+    justify-content:space-around;
     align-items: center;
+
+
+    .msrp-300 {
+      height: 100%;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: flex-start;
+
+
+      .msrp-head-300 {
+        font-weight: bold;
+        font-size: 13px;
+
+      }
+
+      .msrp-data-300 {
+        font-weight: bold;
+        font-size: 38px;
+        padding-top: 8px;
+
+      }
+
+      .msrp-foot-300 {
+        font-weight: bold;
+        font-size: 12px;
+        padding-top: 8px;
+
+      }
+
+    }
+
+
+
+    .lease-300 {
+      height: 100%;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: flex-start;
+
+
+      .lease-head-300 {
+
+      }
+
+      .lease-info-300 {
+
+      }
+
+      .lease-foot-300 {
+
+      }
+
+    }
+
+
+    .finance-300 {
+
+      .finance-head-300 {
+
+      }
+
+      .finance-info-300 {
+
+      }
+
+      .finance-foot-300 {
+
+      }
+
+      .finance-link-300 {
+
+      }
+
+    }
+
+
+    .get-up-to-300 {
+      height: 100%;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: flex-start;
+
+
+      .get-up-to-head-300 {
+
+      }
+
+      .get-up-to-info-300 {
+
+      }
+
+      .get-up-to-link-300 {
+
+      }
+
+    }
+
+
+
+    .finance-buttons-container-300 {
+      height: 100%;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: flex-start;
+
+
+
+      .finance-build-button-300 {
+
+      }
+
+      .finance-search-button-300 {
+
+      }
+
+    }
+
 
   }
 
@@ -193,7 +314,7 @@
     margin: auto;
     display: flex;
     flex-direction: row;
-    justify-content: center;
+    justify-content: space-around;
     align-items: center;
     width: 95%;
     background: #E7E7E7;
@@ -201,7 +322,7 @@
 
 
   .car-300 {
-    width: 22.3%;
+    width: 25%;
     height: 124.99px;
     display: flex;
     flex-direction: column;
