@@ -6,47 +6,37 @@ const express = require('express'),
       config = require('./config.js'),
       session = require('express-session'),
       app = module.exports = express(),
-      port = 8000;
+      port = 8008;
 
-const mainCtrl = require('./controllers/mainCtrl');
+      app.use(bodyParser.json());
+      app.use(express.static(__dirname + './../dist'));
+      app.use(cors());
+      app.use(session({
+          secret: config.SESSION_SECRET,
+          saveUninitialized: false,
+          resave: false
+      }));
 
 //creating setup for connection to a database
 const conn = massive.connectSync({
   connectionString: config.connectionString
 });
 
-app.set('db', db);
+app.set('db', conn);
 var db = app.get('db');
-db.cars(function(err, response) {
-  if (response) {
-    // db.images(function(err, response) {
-    //   if(err) {
-    //     console.log(err)
-    //   }
-    // })
-  }
-})
+const carCtrl = require('./controller/mainCtrl');
 
 
 //functions that run when handeling requets
-app.use(bodyParser.json());
-app.use(express.static(__dirname + '../dist'));
-app.use(cors());
-app.use(session({
-    secret: config.SESSION_SECRET,
-    saveUnitialized: false,
-    resave: false
-}));
-app.use(bodyParser.json({limit: '50mb'}));
-app.use(bodyParser.urlencoded({limit: '50mb', extended: true}));
 
-//get requests
 
-//post requests
+app.get('/api/test', function(req, res) {
+  console.log('hey');
+  res.status(200).send('hey')
+})
+app.get('/api/cars/:model', carCtrl.getCars)
 
-//put requests
 
-//delete requets
 
 //start the server listening on port
 app.listen(port, function() {

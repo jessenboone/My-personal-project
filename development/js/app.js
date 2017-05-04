@@ -5,18 +5,18 @@ angular.module("App", ['ui.router'])
 
        $stateProvider
            .state('home', {
-               templateUrl: '../views/home.html',
+               templateUrl: './views/home.html',
                controller: 'homeCtrl',
                url: '/'
            })
            .state('200', {
-               templateUrl: '../views/200.html',
-               controller: '200Ctrl',
+               templateUrl: './views/200.html',
+               controller: 'ctrl200',
                url: '/200'
            })
            .state('300', {
-               templateUrl: '../views/300.html',
-               controller: '300Ctrl',
+               templateUrl: './views/300.html',
+               controller: 'ctrl300',
                url: '/300'
            })
  });

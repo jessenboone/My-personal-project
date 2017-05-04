@@ -1,21 +1,5 @@
-create table if not exists cars(
-  id serial primary key,
-  model text,
-  package text,
-  detail_1 text,
-  detail_2 text,
-  detail_3 text,
-  detail_4 text,
-  msrp text,
-  mpg text,
-  horsepower text,
-  seating integer,
-  Total_Driving_Range_(Miles) text,
-  Total_Electric_Driving_Range_(Miles) text
-)
 
-
-insert into cars(model, package, detail_1, detail_2, detail_3, detail_4, msrp, mgp, horsepower, seating, Total_Driving_Range_(Miles), Total_Electric_Driving_Range_(Miles))
+insert into cars(model, package, detail_1, detail_2, detail_3, detail_4, msrp, mpg, horsepower, seating, Total_Driving_Range_Miles, Total_Electric_Driving_Range_Miles)
 values
 ('200', 'Touring', '17-Inch Aluminum Wheels', 'Leather-Wrapped steering Wheel', '5-Inch Uconnect Touchscreen with an AM/FM radio', 'Bluetooth Streaming Audio, Voice Command, Hands-Free Calling and Voice Text Reply (not compatible with Iphone mobile devices)', '22,610', '23/36', '184', null, null, null),
 

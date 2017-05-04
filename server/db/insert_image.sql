@@ -1,10 +1,3 @@
-create table if not exists images(
-  id serial primary key,
-  car_id integer references cars(id),
-  color text,
-  image_url text
-)
-
 
 insert into images(car_id, color, image_url)
 values
