@@ -6,6 +6,50 @@
 
 }
 
+.vehicles-wrapper {
+  width: 100%;
+  height: 316px;
+  background: white;
+  position: absolute;
+  top: 80px;
+
+
+  .car-row-header {
+    font-size: 26px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 40px;
+    font-weight: bold;
+  }
+
+  .car-row-border-1 {
+    border-top-width: 1px;
+    border-top-style: solid;
+    border-top-color: #BEBEBE;
+
+  }
+
+  .car-wrapper {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    padding-top: 10px;
+
+    .car-row {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+
+      img {
+        width: 299.79px;
+        height: 133.9px;
+      }
+    }
+
+  }
+}
+
 
 .navbar {
   display: flex;
