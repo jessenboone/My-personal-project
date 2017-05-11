@@ -1,4 +1,4 @@
-<div class="vehicles-wrapper" ng-show="showVehicles">
+<div class="vehicles-wrapper-200" ng-show="showVehicles">
   <div class="car-row-header">
     <h1>ALL CHRYSLER VEHICLES</h1>
   </div>
@@ -9,7 +9,7 @@
 
     <!-- 200 -->
     <div class="car-row">
-      <img ui-sref='200' src="https://www.chrysler.com/content/dam/fca-brands/na/chrysler/en_us/global/header/nav_vehicles/2017-chrysler-200-flyout.jpg.image.300.jpg">
+      <img ui-sref='200' src="https://www.chrysler.com/content/dam/fca-brands/na/chrysler/en_us/global/header/nav_vehicles/2017-chrysler-200-flyout.jpg.image.200.jpg">
       <p class="drop-header">2017 CHRYSLER 200</p>
       <p class="drop-middle1">MSRP STARTING AT</p>
       <p class="drop-cost">$22,610</p>
@@ -31,10 +31,10 @@
       </div>
     </div>
 
-    <!-- 300 -->
+    <!-- 200 -->
     <div class="car-row">
-      <img ui-sref='300' src="https://www.chrysler.com/content/dam/fca-brands/na/chrysler/en_us/global/header/nav_vehicles/2017-chrysler-300-flyout.jpg.image.300.jpg">
-      <p class="drop-header">2017 CHRYSLER 300</p>
+      <img  src="https://www.chrysler.com/content/dam/fca-brands/na/chrysler/en_us/global/header/nav_vehicles/2017-chrysler-200-flyout.jpg.image.200.jpg">
+      <p class="drop-header">2017 CHRYSLER 200</p>
       <p class="drop-middle1">MSRP STARTING AT</p>
       <p class="drop-cost">$32,340</p>
       <div class="drop-down-border">
@@ -57,7 +57,7 @@
 
     <!-- pacifica -->
     <div class="car-row">
-      <img src="https://www.chrysler.com/content/dam/fca-brands/na/chrysler/en_us/global/header/nav_vehicles/2017-chrysler-pacifica-flyout.jpg.image.300.jpg">
+      <img src="https://www.chrysler.com/content/dam/fca-brands/na/chrysler/en_us/global/header/nav_vehicles/2017-chrysler-pacifica-flyout.jpg.image.200.jpg">
       <p class="drop-header">2017 CHRYSLER PACIFICA</p>
       <p class="drop-middle1">MSRP STARTING AT</p>
       <p class="drop-cost">$28,995</p>
@@ -82,7 +82,7 @@
 
       <!-- pacifica hybrid -->
     <div class="car-row">
-      <img src="https://www.chrysler.com/content/dam/fca-brands/na/chrysler/en_us/global/header/nav_vehicles/2017-pacifica-hybrid-global-dropdown-tile.jpg.image.300.jpg">
+      <img src="https://www.chrysler.com/content/dam/fca-brands/na/chrysler/en_us/global/header/nav_vehicles/2017-pacifica-hybrid-global-dropdown-tile.jpg.image.200.jpg">
       <p class="drop-header">2017 CHRYSLER PACIFICA HYBRID</p>
       <p class="drop-middle1">MSRP STARTING AT</p>
       <p class="drop-cost">$41,995</p>
@@ -112,8 +112,7 @@
     <ul class="text">
       <li>
         <div class="logo">
-          <img ui-sref='home'
-          src="./images/chrysler-logo.png" alt="some_text">
+          <img ui-sref='home' src="./images/chrysler-logo.png" alt="some_text">
         </div>
       </li>
       <li style="cursor: pointer" ng-click="showVehicles=!showVehicles">VEHICLES<i class="material-icons">keyboard_arrow_down</i></li>
@@ -160,7 +159,7 @@
         <h1>${{cars[0].msrp}}</h1>
       </div>
       <div class="msrp-foot-200">
-        <h1>2017 Chrysler 300 as shown. Price starting at<br> MSRP ${{cars[0].msrp}}</h1>
+        <h1>2017 Chrysler 200 as shown. Price starting at<br> MSRP ${{cars[0].msrp}}</h1>
       </div>
     </div>
 
@@ -175,7 +174,7 @@
         <h2>months for<br>36 months</h2>
       </div>
       <div class="lease-foot-200">
-        <h2>$2,999 total due at lease signing. No security<br> deposit required. Tax, title and license extra.<br> Lease example for 2017 300 LIMITED.</h2>
+        <h2>$2,999 total due at lease signing. No security<br> deposit required. Tax, title and license extra.<br> Lease example for 2017 200 LIMITED.</h2>
       </div>
     </div>
 
@@ -194,7 +193,7 @@
         <h2>Plus up to $3,500</h2>
       </div>
       <div class="finance-link-200">
-        <h2>Cash Allowance<i class="material-icons side-arrow finance-link-icon-200">keyboard_arrow_right</i></h2>
+        <h2><p>Cash Allowance</p><i class="material-icons side-arrow finance-link-icon-200">keyboard_arrow_right</i></h2>
       </div>
     </div>
 
@@ -207,7 +206,7 @@
         <h1>$5,250</h1>
       </div>
       <div class="get-up-to-link-200">
-        <h2>Total Value<i class="material-icons side-arrow">keyboard_arrow_right</i></h2>
+        <h2><p>Total Value</p><i class="material-icons side-arrow">keyboard_arrow_right</i></h2>
       </div>
     </div>
 
@@ -225,12 +224,12 @@
 
 
   <div class="car-packages">
-    <div class="car-200">
-      <img ng-src="https://www.chrysler.com/mediaserver/iris?client=FCAUS&market=U&brand=C&vehicle=2017_UF&paint=PW7&fabric=&sa=UFCE41,2DB,24B,APA&pov=fronthero&width=560&height=auto&bkgnd=transparent&resp=png&x=2000&y=2000&w=5000&h=6349&width=150" alt="">
-      <h3>TOURING</h3>
+    <div class="car-200" ng-click="selectPackage('touring')">
+    <img ng-src="https://www.chrysler.com/mediaserver/iris?client=FCAUS&market=U&brand=C&vehicle=2017_UF&paint=PW7&fabric=&sa=UFCE41,2DB,24B,APA&pov=fronthero&width=560&height=auto&bkgnd=transparent&resp=png&x=2000&y=2000&w=5000&h=6349&width=150" alt="">
+    <h3>TOURING</h3>
     </div>
-    <div class="car-200">
-      <img ng-src="https://www.chrysler.com/mediaserver/iris?client=FCAUS&market=U&brand=C&vehicle=2017_UF&paint=PAU&fabric=&sa=UFCH41,2DK,24K,APA&pov=fronthero&width=560&height=auto&bkgnd=transparent&resp=png&x=2000&y=2000&w=5000&h=6349&width=300" alt="">
+    <div class="car-200" ng-click="selectPackage('platinum')">
+      <img ng-src="https://www.chrysler.com/mediaserver/iris?client=FCAUS&market=U&brand=C&vehicle=2017_UF&paint=PAU&fabric=&sa=UFCH41,2DK,24K,APA&pov=fronthero&width=560&height=auto&bkgnd=transparent&resp=png&x=2000&y=2000&w=5000&h=6349&width=150" alt="">
       <h3>LIMITED PLATINUM</h3>
     </div>
   </div>
@@ -243,42 +242,42 @@
     <div class="customize-image-column-200">
 
       <div class="customize-package-limited-200">
-        <img ng-src="{{images[0].image_url}}" alt="">
+        <img ng-src="{{currentImage}}" alt="">
       </div>
         <div class="customize-colors-limited-200">
           <div class="customize-colors-limited-200-border">
-            <div class="limited-color-200 billet-silver">
-            <img src="https://www.chrysler.com/mediaserver/iris?COSY-EU-100-1713uLDEMTV1ryKIw0XaBckEKH3dJaNR2kSXstdzJTmtJzOQS%25fv0DNoin7BNV9wU7wuDfRMe2DoR31fDHKFS%25WrDzL25NThzcU5jqDoR" alt="billet-silver">
+            <div class="limited-color-200 bright-white" ng-click="colorPicker('Bright White Clear Coat Exterior Paint')">
+            <img src="https://www.chrysler.com/mediaserver/iris?COSY-EU-100-1713uLDEMTV1ryKIw0XaBckEKH3dJaNR2kSXstdzJTmtJzOQS%255t0DNoin7BNV9wU7wuDfRMe2DoR31fDHKFS2NrDzL25NThzcU5jqD60" alt="bright-white">
             </div>
           </div>
           <div class="customize-colors-limited-200-border">
-            <div class="limited-color-200 velvet-red">
-              <img src="https://www.chrysler.com/mediaserver/iris?COSY-EU-100-1713uLDEMTV1ryKIw0XaBckEKH3dJaNR2kSXstdzJTmtJzOQS%25fv0DNoin7BNV9wU7wuDfRMe2DoR31fDHKFS%25WrDzL25NThzcU5jqDNt" alt="velvet-red">
+            <div class="limited-color-200 maximum-steel" ng-click="colorPicker('Maximum Steel Metallic Clear Coat Exterior Paint')">
+              <img src="https://www.chrysler.com/mediaserver/iris?COSY-EU-100-1713uLDEMTV1ryKIw0XaBckEKH3dJaNR2kSXstdzJTmtJzOQS%25fv0DNoin7BNV9wU7wuDfRMe2DoR31fDHKFS%25WrDzL25NThzcU5jqD%25I" alt="maximum-steel">
               </div>
             </div>
             <div class="customize-colors-limited-200-border">
-              <div class="limited-color-200 maximum-steel">
-                <img src="https://www.chrysler.com/mediaserver/iris?COSY-EU-100-1713uLDEMTV1ryKIw0XaBckEKH3dJaNR2kSXstdzJTmtJzOQS%25fv0DNoin7BNV9wU7wuDfRMe2DoR31fDHKFS%25WrDzL25NThzcU5jqD%25I" alt="maximum-steel">
+              <div class="limited-color-200 billet-silver" ng-click="colorPicker('Billet Silver Metallic Clear Coat Exterior Paint')">
+                <img src="https://www.chrysler.com/mediaserver/iris?COSY-EU-100-1713uLDEMTV1ryKIw0XaBckEKH3dJaNR2kSXstdzJTmtJzOQS%25fv0DNoin7BNV9wU7wuDfRMe2DoR31fDHKFS%25WrDzL25NThzcU5jqDoR" alt="billet-silver">
               </div>
             </div>
           <div class="customize-colors-limited-200-border">
-            <div class="limited-color-200 granite-crystal">
+            <div class="limited-color-200 granite-crystal" ng-click="colorPicker('Granite Crystal Metallic Clear Coat Exterior Paint')">
               <img src="https://www.chrysler.com/mediaserver/iris?COSY-EU-100-1713uLDEMTV1ryKIw0XaBckEKH3dJaNR2kSXstdzJTmtJzOQS%25fv0DNoin7BNV9wU7wuDfRMe2DoR31fDHKFS%25WrDzL25NThzcU5jqD%25L" alt="granite-crystal">
             </div>
           </div>
           <div class="customize-colors-limited-200-border">
-            <div class="limited-color-200 gloss-black">
+            <div class="limited-color-200 velvet-red" ng-click="colorPicker('Velvet Red Pearl Clear Coat Exterior Paint')">
+              <img src="https://www.chrysler.com/mediaserver/iris?COSY-EU-100-1713uLDEMTV1ryKIw0XaBckEKH3dJaNR2kSXstdzJTmtJzOQS%25fv0DNoin7BNV9wU7wuDfRMe2DoR31fDHKFS%25WrDzL25NThzcU5jqDNt" alt="velvet-red">
+            </div>
+          </div>
+          <div class="customize-colors-limited-200-border">
+            <div class="limited-color-200 jazz-blue" ng-click="colorPicker('Black Clear Coat Exterior Paint')">
               <img src="https://www.chrysler.com/mediaserver/iris?COSY-EU-100-1713uLDEMTV1ryKIw0XaBckEKH3dJaNR2kSXstdzJTmtJzOQS%25fv0DNoin7BNV9wU7wuDfRMe2DoR31fDHKFS%25WrDzL25NThzcU5jqDw2" alt="gloss-black">
             </div>
           </div>
           <div class="customize-colors-limited-200-border">
-            <div class="limited-color-200 jazz-blue">
-              <img src="https://www.chrysler.com/mediaserver/iris?COSY-EU-100-1713uLDEMTV1ryKIw0XaBckEKH3dJaNR2kSXstdzJTmtJzOQS%25fv0DNoin7BNV9wU7wuDfRMe2DoR31fDHKFS%25WrDzL25NThzcU5jqDGM" alt="jazz-blue">
-            </div>
-          </div>
-          <div class="customize-colors-limited-200-border">
-            <div class="limited-color-200 bright-white">
-              <img src="https://www.chrysler.com/mediaserver/iris?COSY-EU-100-1713uLDEMTV1ryKIw0XaBckEKH3dJaNR2kSXstdzJTmtJzOQS%25fv0DNoin7BNV9wU7wuDfRMe2DoR31fDHKFS%25WrDzL25NThzcU5jqD60">
+            <div class="limited-color-200 vivid-blue" ng-click="colorPicker('Vivid Blue Pearl Clear Coat Exterior Paint')">
+              <img src="https://www.chrysler.com/mediaserver/iris?COSY-EU-100-1713uLDEMTV1ryKIw0XaBckEKH3dJaNR2kSXstdzJTmtJzOQS%255t0DNoin7BNV9wU7wuDfRMe2DoR31fDHKFS2NrDzL25NThzcU5jqDqo" alt="vivid-blue">
             </div>
         </div>
       </div>
@@ -292,17 +291,20 @@
           <h2>2017</h2>
         </div>
         <div class="car-packaging-200">
-          <h1>{{cars[0].model}} {{cars[0].package}}</h1>
+          <h1>{{images[0].package}}</h1>
         </div>
         <br>
         <div class="car-packages-details-200">
           <ul class="a-200">
-            <li class="b-200">{{cars[0].detail_1}}</li>
-            <li class="b-200">{{cars[0].detail_2}}</li>
-            <li class="b-200">{{cars[0].detail_3}}</li>
-            <li class="b-200">{{cars[0].detail_4}}</li>
+            <li class="b-200">{{images[0].detail_1}}</li>
+            <li class="b-200">{{images[0].detail_2}}</li>
+            <li class="b-200">{{images[0].detail_3}}</li>
+            <li class="b-200">{{images[0].detail_4}}</li>
           </ul>
         </div>
+      </div>
+      <div class="customize-border-200">
+
       </div>
       <div class="customize-info-bottom-200">
         <div class="bottom-info-container-200">
@@ -311,23 +313,23 @@
               <h2>MSRP STARTING AT</h2>
             </div>
             <div class="bottom-msrp-data-200">
-              ${{cars[0].msrp}}
+              ${{images[0].msrp}}
             </div>
           </div>
-          <div class="bottom-mpg-200">
-            <div class="bottom-mpg-title-200">
+          <div class="bottom-msrp-200">
+            <div class="bottom-msrp-title-200">
               <h2>MGP CITY/HWY</h2>
             </div>
-            <div class="bottom-mpg-data-200">
-              {{cars[0].mpg}}
+            <div class="bottom-msrp-data-200">
+              {{images[0].mpg}}
             </div>
           </div>
-          <div class="bottom-horsepower-200">
-            <div class="bottom-horsepower-title-200">
+          <div class="bottom-msrp-200">
+            <div class="bottom-msrp-title-200">
               <h2>HORSEPOWER</h2>
             </div>
-            <div class="bottom-horsepower-data-200">
-              {{cars[0].horsepower}}
+            <div class="bottom-msrp-data-200">
+              {{images[0].horsepower}}
             </div>
           </div>
         </div>
