@@ -130,6 +130,9 @@
   }
 
 
+  .logo:hover {
+    cursor: pointer;
+  }
 
   .logo {
   margin-left: 5px;
@@ -395,6 +398,9 @@
       }
 
 
+      .finance-link-200:hover {
+        cursor: pointer;
+      }
 
       .finance-link-200 {
         display: flex;
@@ -403,6 +409,7 @@
         color: #4E68A9;
         font-size: 15px;
         font-weight: bold;
+        padding-top: 8px;
 
         h2 {
           display: flex;
@@ -505,7 +512,9 @@
   }
 
 
-
+  .car-packages:hover {
+    cursor: pointer;
+  }
 
   .car-packages {
     margin: auto;

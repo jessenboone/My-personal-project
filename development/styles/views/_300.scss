@@ -130,6 +130,9 @@
   }
 
 
+  .logo:hover {
+    cursor: pointer;
+  }
 
   .logo {
   margin-left: 5px;
@@ -392,7 +395,9 @@
 
       }
 
-
+      .finance-link-300:hover {
+        cursor: pointer;
+      }
 
       .finance-link-300 {
         display: flex;
@@ -401,6 +406,12 @@
         color: #4E68A9;
         font-size: 15px;
         font-weight: bold;
+        padding-top: 8px;
+
+        h2 {
+          display: flex;
+          align-items: center;
+        }
 
       }
 
@@ -428,11 +439,20 @@
 
       }
 
+      .get-up-to-link-300:hover {
+        cursor: pointer;
+      }
+
       .get-up-to-link-300 {
         color: #4E68A9;
         font-weight: bold;
         font-size: 15px;
         padding-top: 8px;
+
+        h2 {
+          display: flex;
+          align-items: center;
+        }
       }
 
     }
@@ -488,7 +508,9 @@
   }
 
 
-
+  .car-packages:hover {
+    cursor: pointer;
+  }
 
   .car-packages {
     margin: auto;
