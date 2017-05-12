@@ -1,0 +1,227 @@
+<nav class="mini-nav">
+  <ul class="text mini-text">
+    <li>300</li>
+    <li>Overview</li>
+    <li>Gallery</li>
+    <li>Features<i class="material-icons">keyboard_arrow_down</i></li>
+  </ul>
+</nav>
+
+
+
+
+<div class="carousel-300">
+  <video loop class="main-video-300" src="http://www.chrysler.com/content/dam/fca-brands/na/chrysler/en_us/2017/300/vlp/desktop/2017-chrysler-300-hero.mp4" autoplay>
+  </video>
+</div>
+
+
+
+
+<div class="car-container-300">
+  <div class="car-financing-info-300">
+
+    <div class="msrp-300">
+      <div class="msrp-head-300">
+        <h1>MSRP STARTING AT</h1>
+      </div>
+      <div class="msrp-data-300">
+        <h1>${{images[0].msrp}}</h1>
+      </div>
+      <div class="msrp-foot-300">
+        <h1>2017 Chrysler 300 as shown. Price starting at<br> MSRP ${{images[0].msrp}}</h1>
+      </div>
+    </div>
+
+
+
+    <div class="lease-300">
+      <div class="lease-head-300">
+        <h1>Lease for</h1>
+      </div>
+      <div class="lease-info-300">
+        <h1>$260</h1>
+        <h2>months for<br>36 months</h2>
+      </div>
+      <div class="lease-foot-300">
+        <h2>$2,999 total due at lease signing. No security<br> deposit required. Tax, title and license extra.<br> Lease example for 2017 300 LIMITED.</h2>
+      </div>
+    </div>
+
+
+    <div class="finance-300">
+      <div class="finance-head-300">
+        <h1>Finance for</h1>
+      </div>
+      <div class="finance-info-300">
+        <h1>0% APR</h1>
+      </div>
+      <div class="finance-months-300">
+        <h2>For 60 months</h2>
+      </div>
+      <div class="finance-incentives-300">
+        <h2>Plus up to $3,500</h2>
+      </div>
+      <div class="finance-link-300">
+        <h2><p>Cash Allowance</p><i class="material-icons side-arrow finance-link-icon-300">keyboard_arrow_right</i></h2>
+      </div>
+    </div>
+
+
+    <div class="get-up-to-300">
+      <div class="get-up-to-head-300">
+        <h2>Get up to</h2>
+      </div>
+      <div class="get-up-to-info-300">
+        <h1>$5,250</h1>
+      </div>
+      <div class="get-up-to-link-300">
+        <h2><p>Total Value</p><i class="material-icons side-arrow">keyboard_arrow_right</i></h2>
+      </div>
+    </div>
+
+
+    <!-- <div class="finance-buttons-container-300">
+      <div class="finance-build-button-300">
+        <button type="button" class="-finance-button-300"><i class="material-icons icons-style-mini finance-wrench">BUILD & PRICE<i class="material-icons build-side-arrow">keyboard_arrow_right</i></button>
+      </div>
+      <div class="finance-search-button-300">
+        <button type="button">SEARCH NEW INVENTORY<i class="material-icons search-side-arrow">keyboard_arrow_right</i></button>
+      </div>
+    </div> -->
+  </div>
+
+
+
+  <div class="car-packages">
+    <div class="car-300" ng-click="selectPackage('limited')">
+    <img ng-src="https://www.chrysler.com/mediaserver/iris?client=FCAUS&market=U&brand=C&vehicle=2017_LX&paint=PSC&fabric=&sa=LXCH48,2DF,22F,APA&pov=fronthero&width=&height=&bkgnd=transparent&resp=png&x=&y=&w=&h=&width=150" alt="">
+    <h3>LIMITED</h3>
+    </div>
+    <div class="car-300" ng-click="selectPackage('s300')">
+      <img ng-src="https://www.chrysler.com/mediaserver/iris?client=FCAUS&market=U&brand=C&vehicle=2017_LX&paint=PW7&fabric=&sa=LXCL48,2DG,26G,APA&pov=fronthero&width=&height=&bkgnd=transparent&resp=png&x=&y=&w=&h=&width=150" alt="">
+      <h3>300S</h3>
+    </div>
+    <div class="car-300" ng-click="selectPackage('c300')">
+      <img ng-src="https://www.chrysler.com/mediaserver/iris?client=FCAUS&market=U&brand=C&vehicle=2017_LX&paint=PBX&fabric=&sa=LXCS48,2DT,26T,APA&pov=fronthero&width=&height=&bkgnd=transparent&resp=png&x=&y=&w=&h=&width=150" alt="">
+      <h3>300C</h3>
+    </div>
+    <div class="car-300" ng-click="selectPackage('platinum')">
+      <img ng-src="https://www.chrysler.com/mediaserver/iris?client=FCAUS&market=U&brand=C&vehicle=2017_LX&paint=PAR&fabric=&sa=LXCR48,2DR,26R,APA&pov=fronthero&width=&height=&bkgnd=transparent&resp=png&x=&y=&w=&h=&width=150" alt="">
+      <h3>300C PLATINUM</h3>
+    </div>
+  </div>
+
+
+
+
+
+  <div class="customize-container-300">
+    <div class="customize-image-column-300">
+
+      <div class="customize-package-limited-300">
+        <img ng-src="{{currentImage}}" alt="">
+      </div>
+        <div class="customize-colors-limited-300">
+          <div class="customize-colors-limited-300-border">
+            <div class="limited-color-300 billet-silver" ng-click="colorPicker('Billet Silver Metallic Clear Coat Exterior Paint')">
+            <img src="https://www.chrysler.com/mediaserver/iris?COSY-EU-100-1713uLDEMTV1ryKIw0XaBckEKH3dJaNR2kSXstdzJTmtJzOQS%25fv0DNoin7BNV9wU7wuDfRMe2DoR31fDHKFS%25WrDzL25NThzcU5jqDoR" alt="billet-silver">
+            </div>
+          </div>
+          <div class="customize-colors-limited-300-border">
+            <div class="limited-color-300 velvet-red" ng-click="colorPicker('Velvet Red Pearl Clear Coat Exterior Paint')" ng-if="!shows300">
+              <img src="https://www.chrysler.com/mediaserver/iris?COSY-EU-100-1713uLDEMTV1ryKIw0XaBckEKH3dJaNR2kSXstdzJTmtJzOQS%25fv0DNoin7BNV9wU7wuDfRMe2DoR31fDHKFS%25WrDzL25NThzcU5jqDNt" alt="velvet-red">
+              </div>
+
+              <div class="limited-color-300 redline-red" ng-click="colorPicker('Redline Red Tri-Coat Exterior Paint')" ng-if="shows300">
+                <img src="https://www.chrysler.com/mediaserver/iris?COSY-EU-100-1713uLDEMTV1ryKIw0XaBckEKH3dJaNR2kSXstdzJTmtJzOQS%25fv0DNoin7BNV9wU7wuDfRMe2DoR31fDHKFS%25WrDzL25NThzcU5jqDNi" alt="redline-red">
+                </div>
+            </div>
+            <div class="customize-colors-limited-300-border">
+              <div class="limited-color-300 maximum-steel" ng-click="colorPicker('Maximum Steel Metallic Clear Coat Exterior Paint')">
+                <img src="https://www.chrysler.com/mediaserver/iris?COSY-EU-100-1713uLDEMTV1ryKIw0XaBckEKH3dJaNR2kSXstdzJTmtJzOQS%25fv0DNoin7BNV9wU7wuDfRMe2DoR31fDHKFS%25WrDzL25NThzcU5jqD%25I" alt="maximum-steel">
+              </div>
+            </div>
+          <div class="customize-colors-limited-300-border">
+            <div class="limited-color-300 granite-crystal" ng-click="colorPicker('Granite Crystal Metallic Clear Coat Exterior Paint')">
+              <img src="https://www.chrysler.com/mediaserver/iris?COSY-EU-100-1713uLDEMTV1ryKIw0XaBckEKH3dJaNR2kSXstdzJTmtJzOQS%25fv0DNoin7BNV9wU7wuDfRMe2DoR31fDHKFS%25WrDzL25NThzcU5jqD%25L" alt="granite-crystal">
+            </div>
+          </div>
+          <div class="customize-colors-limited-300-border">
+            <div class="limited-color-300 gloss-black" ng-click="colorPicker('Gloss Black Exterior Paint')">
+              <img src="https://www.chrysler.com/mediaserver/iris?COSY-EU-100-1713uLDEMTV1ryKIw0XaBckEKH3dJaNR2kSXstdzJTmtJzOQS%25fv0DNoin7BNV9wU7wuDfRMe2DoR31fDHKFS%25WrDzL25NThzcU5jqDw2" alt="gloss-black">
+            </div>
+          </div>
+          <div class="customize-colors-limited-300-border">
+            <div class="limited-color-300 jazz-blue" ng-click="colorPicker('Jazz Blue Exterior Paint')">
+              <img src="https://www.chrysler.com/mediaserver/iris?COSY-EU-100-1713uLDEMTV1ryKIw0XaBckEKH3dJaNR2kSXstdzJTmtJzOQS%25fv0DNoin7BNV9wU7wuDfRMe2DoR31fDHKFS%25WrDzL25NThzcU5jqDGM" alt="jazz-blue">
+            </div>
+          </div>
+          <div class="customize-colors-limited-300-border">
+            <div class="limited-color-300 bright-white" ng-click="colorPicker('Bright White Exterior Paint')">
+              <img src="https://www.chrysler.com/mediaserver/iris?COSY-EU-100-1713uLDEMTV1ryKIw0XaBckEKH3dJaNR2kSXstdzJTmtJzOQS%25fv0DNoin7BNV9wU7wuDfRMe2DoR31fDHKFS%25WrDzL25NThzcU5jqD60">
+            </div>
+        </div>
+      </div>
+      <div class="color-text-300">
+
+      </div>
+    </div>
+    <div class="customize-info-column-300">
+      <div class="customize-info-top-300">
+        <div class="car-package-year-300">
+          <h2>2017</h2>
+        </div>
+        <div class="car-packaging-300">
+          <h1>{{images[0].package}}</h1>
+        </div>
+        <br>
+        <div class="car-packages-details-300">
+          <ul class="a-300">
+            <li class="b-300">{{images[0].detail_1}}</li>
+            <li class="b-300">{{images[0].detail_2}}</li>
+            <li class="b-300">{{images[0].detail_3}}</li>
+            <li class="b-300">{{images[0].detail_4}}</li>
+          </ul>
+        </div>
+      </div>
+      <div class="customize-border-300">
+
+      </div>
+      <div class="customize-info-bottom-300">
+        <div class="bottom-info-container-300">
+          <div class="bottom-msrp-300">
+            <div class="bottom-msrp-title-300">
+              <h2>MSRP STARTING AT</h2>
+            </div>
+            <div class="bottom-msrp-data-300">
+              ${{images[0].msrp}}
+            </div>
+          </div>
+          <div class="bottom-msrp-300">
+            <div class="bottom-msrp-title-300">
+              <h2>MGP CITY/HWY</h2>
+            </div>
+            <div class="bottom-msrp-data-300">
+              {{images[0].mpg}}
+            </div>
+          </div>
+          <div class="bottom-msrp-300">
+            <div class="bottom-msrp-title-300">
+              <h2>HORSEPOWER</h2>
+            </div>
+            <div class="bottom-msrp-data-300">
+              {{images[0].horsepower}}hp
+            </div>
+          </div>
+        </div>
+        <div class="bottom-buttons-300">
+
+        </div>
+
+      </div>
+    </div>
+  </div>
+
+
+</div>
