@@ -6,7 +6,7 @@ const express = require('express'),
       config = require('./config.js'),
       session = require('express-session'),
       app = module.exports = express(),
-      port = 8080;
+      port = 80;
 
       app.use(bodyParser.json());
       app.use(express.static(__dirname + './../dist'));
