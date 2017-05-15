@@ -27,7 +27,7 @@ angular.module("App").controller('ctrl200', ["$scope", "service200", function ($
   $scope.getCars = function () {
     service200.getCars(200).then(function (response) {
       $scope.cars = response;
-      console.log(response);
+      //  console.log(response);
     });
   };
 
@@ -37,7 +37,7 @@ angular.module("App").controller('ctrl200', ["$scope", "service200", function ($
     service200.getImages(200).then(function (response) {
       $scope.touring = [];
       $scope.platinum = [];
-      console.log(response);
+      // console.log(response);
       response.forEach(function (v, i, a) {
         switch (v.package) {
           case 'Touring':
@@ -49,7 +49,7 @@ angular.module("App").controller('ctrl200', ["$scope", "service200", function ($
         }
       });
       $scope.images = $scope.touring;
-      console.log($scope.images);
+      //  console.log($scope.images);
       $scope.currentImage = $scope.images[0].image_url;
     });
   };
@@ -62,7 +62,7 @@ angular.module("App").controller('ctrl200', ["$scope", "service200", function ($
     } else {
       $scope.shows200 = false;
     }
-    console.log($scope.images);
+    //  console.log($scope.images);
   };
 
   $scope.colorPicker = function (color) {
@@ -85,7 +85,7 @@ angular.module("App").service('service200', ["$http", function ($http) {
       url: '/api/cars/' + model
     }).then(function (response) {
       return response.data;
-      console.log(response.data);
+      // console.log(response.data)
     });
   };
 
@@ -95,7 +95,7 @@ angular.module("App").service('service200', ["$http", function ($http) {
       url: '/api/images/' + model
     }).then(function (response) {
       return response.data;
-      console.log(response.data);
+      // console.log(response.data)
     });
   };
 }]);
@@ -108,7 +108,7 @@ angular.module("App").controller('ctrl300', ["$scope", "service300", function ($
   $scope.getCars = function () {
     service300.getCars(300).then(function (response) {
       $scope.cars = response;
-      console.log(response);
+      //  console.log(response);
     });
   };
 
@@ -151,7 +151,7 @@ angular.module("App").controller('ctrl300', ["$scope", "service300", function ($
     } else {
       $scope.shows300 = false;
     }
-    console.log($scope.images);
+    //  console.log($scope.images);
   };
 
   $scope.colorPicker = function (color) {
@@ -174,7 +174,7 @@ angular.module("App").service('service300', ["$http", function ($http) {
       url: '/api/cars/' + model
     }).then(function (response) {
       return response.data;
-      console.log(response.data);
+      // console.log(response.data)
     });
   };
 
@@ -184,7 +184,7 @@ angular.module("App").service('service300', ["$http", function ($http) {
       url: '/api/images/' + model
     }).then(function (response) {
       return response.data;
-      console.log(response.data);
+      // console.log(response.data)
     });
   };
 }]);

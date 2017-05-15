@@ -6,7 +6,7 @@ const express = require('express'),
       config = require('./config.js'),
       session = require('express-session'),
       app = module.exports = express(),
-      port = 8008;
+      port = 8080;
 
       app.use(bodyParser.json());
       app.use(express.static(__dirname + './../dist'));
@@ -29,13 +29,7 @@ const carCtrl = require('./controller/mainCtrl');
 
 //functions that run when handeling requets
 
-
-app.get('/api/test', function(req, res) {
-  console.log('hey');
-  res.status(200).send('hey')
-})
 app.get('/api/cars/:model', carCtrl.getCars)
-
 app.get('/api/images/:model', carCtrl.getImages)
 
 

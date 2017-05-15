@@ -6,7 +6,7 @@ angular.module("App").service('service200', function($http) {
       url: '/api/cars/' + model
     }).then(function(response){
       return response.data
-      console.log(response.data)
+      // console.log(response.data)
     })
 
   }
@@ -18,7 +18,7 @@ angular.module("App").service('service200', function($http) {
       url: '/api/images/' + model
     }).then(function(response) {
       return response.data
-      console.log(response.data)
+      // console.log(response.data)
     })
 
   }

@@ -6,7 +6,7 @@ angular.module("App").controller('ctrl300', function($scope, service300) {
     $scope.getCars = function() {
      service300.getCars(300).then(function(response) {
        $scope.cars = response;
-       console.log(response);
+      //  console.log(response);
      })
 
    }
@@ -53,7 +53,7 @@ angular.module("App").controller('ctrl300', function($scope, service300) {
       } else {
         $scope.shows300 = false;
       }
-     console.log($scope.images);
+    //  console.log($scope.images);
    }
 
    $scope.colorPicker = function(color) {

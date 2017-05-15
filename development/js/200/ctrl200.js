@@ -6,7 +6,7 @@ angular.module("App").controller('ctrl200', function($scope, service200) {
     $scope.getCars = function() {
      service200.getCars(200).then(function(response) {
        $scope.cars = response;
-       console.log(response);
+      //  console.log(response);
      })
 
    }
@@ -19,7 +19,7 @@ angular.module("App").controller('ctrl200', function($scope, service200) {
      service200.getImages(200).then(function(response) {
        $scope.touring = []
        $scope.platinum = []
-      console.log(response);
+      // console.log(response);
        response.forEach(function(v, i, a) {
          switch(v.package) {
            case 'Touring':
@@ -32,7 +32,7 @@ angular.module("App").controller('ctrl200', function($scope, service200) {
 
        });
        $scope.images=$scope.touring;
-       console.log($scope.images);
+      //  console.log($scope.images);
        $scope.currentImage = $scope.images[0].image_url;
 
      })
@@ -46,7 +46,7 @@ angular.module("App").controller('ctrl200', function($scope, service200) {
       } else {
         $scope.shows200 = false;
       }
-     console.log($scope.images);
+    //  console.log($scope.images);
    }
 
    $scope.colorPicker = function(color) {
